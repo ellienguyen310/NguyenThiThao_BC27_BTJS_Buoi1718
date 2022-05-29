@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="enterNum"></label>
+    <input id="enterNum" type="number">
+    <button onclick="addNum()">Thêm số</button>
+    <div id="showList"></div>
+
+    <div>
+        <p>1. Tính tổng các số dương trong mảng</p>
+        <button onclick="calcSum()">Tính tổng số dương</button>
+        <div id="showSum"></div>
+    </div>
+
+    <div>
+        <p>2. Đếm có bao nhiêu số dương trong mảng</p>
+        <button onclick="countPos()">Đếm số dương</button>
+        <div id="showPos"></div>
+    </div>
+
+    <div>
+        <p>3. Tìm số nhỏ nhất trong mảng</p>
+        <button onclick="findMin()">Tìm số nhỏ nhất</button>
+        <div id="showMin"></div>
+    </div>
+
+    <div>
+        <p>4. Tìm số dương nhỏ nhất trong mảng</p>
+        <button onclick="findMinPos()">Tìm số dương nhỏ nhất</button>
+        <div id="showMinPos"></div>
+    </div>
+
+    <div>
+        <p>5. Tìm số chẵn cuối cùng trong mảng. 
+            Nếu mảng không có giá trị chẵn thì trả về -1.</p>
+        <button onclick="findLastEven()">Tìm số chẵn cuối cùng</button>
+        <div id="showLastEven"></div>
+    </div>
+
+    <div>
+        <p>6. Đổi chỗ 2 giá trị trong mảng theo vị trí 
+            (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị).</p>
+        <input id="position-1" type="number" placeholder="Nhập vị trí số thứ nhất">
+        <input id="position-2" type="number" placeholder="Nhập vị trí số thứ hai">
+
+        <button onclick="swapNums()">Đổi số</button>
+        <div id="arrayAfter"></div>
+    </div>
+
+    <div>
+        <p>7. Sắp xếp mảng theo thứ tự tăng dần.</p>
+        <button onclick="sortArray()">Sắp xếp</button>
+        <div id="arrayAfterSort"></div>
+    </div>
+
+    <div>
+        <p>8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1.        </p>
+        <button onclick="findFirstPrime()">Tìm số nguyên tố đầu tiên</button>
+        <div id="showFirstPrime"></div>
+    </div>
+
+    <div>
+        <p>9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</p>
+        <label for="enterNum9"></label>
+        <input id="enterNum9" type="number">
+        <button onclick="addNum9()">Thêm số</button>
+        <div id="showList9"></div>
+
+        <button onclick="countInteger()">Đếm số số nguyên</button>
+        <div id="showListInteger"></div>
+        <div id="countInteger"></div>
+
+    </div>
+    
+    <div>
+        <p>10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn</p>
+        <button onclick="compareAmount()">So sánh</button>
+        <div id="compareAmount"></div>
+    </div>
+
+    <script src="./homework.js"></script>
+</body>
+</html>
